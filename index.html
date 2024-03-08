@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+
+      
+      * {
+        
+        padding: 0;
+        font-family: 'Kantumruy Pro', sans-serif;
+
+        margin: 0;
+        box-sizing: border-box;
+      }
+    
+      nav ul {
+        background-color: rgb(226, 232, 237);
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+        padding: 10px;
+        font-size: 20px;
+        margin: -5px 0px;
+      }
+      nav {
+        display: inline;
+      }
+      .img-p1 img {
+        width: 100%;
+      }
+      .main {
+        background-color: rgb(226, 232, 237);
+        height: 50vh;
+        margin-top: 50px;
+      }
+      .main-detail {
+        height: 15vh;
+        padding: 10px 0;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-detail h1 {
+        font-size: 30px;
+      }
+      .main-detail p {
+        font-size: 20px;
+      }
+      .main-icon {
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 35vh;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+      .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .main-icon i {
+        color: purple;
+        font-size: 80px;
+      }
+
+      .fin-pro-sch .main-detail {
+        height: 15vh;
+        padding: 10px 0;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .main-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+        
+      }
+      .main-video .video iframe {
+        border-radius: 20px;
+        margin: 15px 15px;
+        object-fit: contain;
+
+      }
+      .main-block-pic{
+        display: flex;
+        justify-content: center;
+        /* width: 100vw; */
+      }
+      .block-pic{
+        margin: 15px 15px;
+      }
+      .block-pic img{
+        border-radius: 20px;
+        width: 350px;
+        height: 250px;
+        object-fit: cover;
+      }
+      .footer-main {
+            background-color: #253c95;
+            padding: 16px 190px 0px 190px;
+            margin-top: 20px;
+        }
+
+        .footer-section {
+            display: grid;
+            grid-template-columns: repeat(4, 380px);
+            text-align: center;
+            color: white;
+            padding: 40px 0px 0px 0px;
+            margin-bottom: 10px;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 15px;
+        }
+        .footer-left span{
+          font-size: 20px;
+        }
+        .footer-left a {
+            text-decoration: none;
+        }
+
+        .footer-left img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .footer-left span {
+            padding-top: 20px;
+            color: white;
+        }
+
+        .footer-mid-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 150px;
+        }
+        .footer-mid-left span{
+          font-size: 20px;
+        }
+        .footer-mid-left li {
+          padding: 3px;
+          list-style: none;
+        }
+
+        .footer-mid-left a {
+     
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-mid-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 150px;
+        }
+
+        .footer-mid-right li {
+          padding: 3px;
+            list-style: none;
+        }
+
+        .footer-mid-right a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-mid-right span {
+            font-size: 20px;
+            align-items: center;
+        }
+
+        .footer-mid-right i {
+            font-size: 20px;
+            color: white;
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer-right iframe {
+            padding-top: 20px;
+        }
+
+        .footer-right span {
+          font-size: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom span {
+          font-size: 20px;
+            color: white;
+        }
+      
+    </style>
+  </head>
+  <body>
+    <head>
+      <section class="img-p1">
+        <img src="./img/p1.gif" alt="" /><nav>
+        <ul>
+          <li><a href="#"></a>ទំព័រដើម</li>
+          <li><a href="#"></a>វីដេអូ</li>
+          <li><a href="#"></a>មុខងារ</li>
+          <li><a href="#"></a>តម្លៃ</li>
+          <li><a href="#"></a>ចុះឈ្មោះ</li>
+        </ul>
+      </nav>
+      </section>
+      
+    </head>
+    <main class="main">
+      <section class="main-detail">
+        <h1>សេវាកម្មរបស់សុីស្តាត</h1>
+        <p>
+          ឥឡូវនេះ​
+          អ្នកក៏អាចចាប់ផ្តើមជាមួយបណ្ណាល័យសមាសភាគប្រភពបើកចំហដែលត្រូវបានបង្កើតឡើងសម្រាប់ក្របខ័ណ្ឌ
+          <br />
+            <p>ដូចជា React, Vue.js, Svelte និង Angular។</p>
+
+        </p>
+      </section>
+      <section class="main-icon">
+        <section class="grid-container">
+          <div class="grid-item">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p>សេវាកម្មគេហទំព័រ</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-plane-departure"></i>
+            <p>សេវាកម្មដឹកជញ្ជូន</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+            <p>ក្លោដទំនាក់ទំនង</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-unlock-keyhole"></i>
+            <p>សុវត្ថិភាពប្រព័ន្ធ</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-volume-low"></i>
+            <p>ឧបករណ៍បំពងសម្លេង</p>
+          </div>
+          <div class="grid-item">
+            <i class="fa-solid fa-image"></i>
+            <p>ថតរូបកញ្ចក់</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- finish students' scholarship -->
+    <section class="fin-pro-sch">
+      <section class="main-detail">
+        <h1>គម្រោងបញ្ចប់ថ្នាក់សិក្សារបស់និស្សិតអាហារូបករណ៍</h1>
+        <p>
+          នេះគឺជាស្នាដៃគម្រោងារបស់និស្សិតអាហារូបករណ៍ដែលជាគម្រោងដែលទើបតែបានបញ្ចប់ការសិក្សាថ្មីៗនេះ
+          កាលពី<br />
+          <p>ថ្ងៃទី ៨ ខែ សីហា​ ឆ្នាំ​ ២០២៣</p>
+        </p>
+      </section> 
+      <!-- Youtube Videos -->
+      <section class="main-video">
+        <section class="video">
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CQShvmjJ2SE?si=ahHxHmceHQ1emGoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mwz7mFOJ25s?si=XtzzuZ9MABLWPad1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
+          </div>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/V8WZ1TVTsAA?si=Yeu40XPizGkGYq6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SQy5sUmK_OQ?si=F0Vu3HJNdK6bQJiZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>         
+          </div>
+          <div>
+          <div>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/CkukosImhLI?si=6S9fIm_ZCz7eiQT7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/lVpSUE1qLkI?si=LIcANm5kPl13ZHPC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          
+          </div>
+        </div>
+        </section>
+      </section>
+    </section> 
+
+    <section class="fin-pro-sch">
+      <section class="main-detail">
+        <h1>បច្ចេកវិទ្យាដែលមានប្រើប្រាស់</h1>
+        <p>បច្ចេកវិទ្យាដែលបានប្រើប្រាស់ក្នុងគេហទំព័រគម្រោងទាំងនេះ</p>
+      </section>
+      <section>
+        <section class="main-block-pic">
+          <div class="block-pic">
+          <img src="img/62cfb5fed0030bcc972a475d_python.jpeg" alt="">
+        </div>
+        <div class="block-pic">
+          <img src="img/64063dbcad97bd421b437096_chatgpt.jpg" alt="">
+        </div>
+        <div class="block-pic">
+          <img src="img/bootstrap-social.png" alt="">
+        </div>
+        </section>
+        <section class="main-block-pic">
+           <div class="block-pic">
+          <img src="img/creative-css3-tutorials.jpg" alt="">
+        </div>
+        <div class="block-pic">
+          <img src="img/react-logo@3x.svg" alt="">
+        </div>
+        <div class="block-pic">
+          <img src="img/javascript-custom-events.avif" alt="">
+        </div>
+        </section>
+        
+      </section>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer-main">
+          <section class="footer-section">
+            <div class="footer-left">
+              <a href="https://istad.co">
+                <img src="https://istad.co/resources/img/logo_md.png" alt="CSTAD">
+              </a>
+              <span>Start your IT Career with CSTAD</span>
+            </div>
+            <div class="footer-mid-left">
+              <span>Learn More</span>
+                <ul>
+                  <li><a href="#">Course</a></li>
+                  <li><a href="#">IT News</a></li>
+                  <li><a href="#">Job Opportunity</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-mid-right">
+              <span>Contact Us</span>
+                <ul>
+                  <li><a href="tel:(+855 959 909 10)">(+855) 95-990-910</a></li>
+                  <li><a href="tel:(+855 939 909 10)">(+855) 93-990-910</a></li>
+                </ul>
+                <div>
+                  <span>
+                    <i class="fa-brands fa-telegram"></i>Telegram
+                  </span>
+                  <span>
+                    <i class="fa-brands fa-youtube"></i>Youtube
+                  </span>
+                </div>
+            </div>
+            <div class="footer-right">
+              <span>Follow Us</span>
+              <div>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fistad.co&hide_cover=false&show_facepile=true&appId=536767018150991" frameborder="0"></iframe>
+              </div>
+          </div>
+            </section>
+            <hr>
+            <section class="footer-bottom">
+                <span> @ 2023 Center of Science and Technology Advanced Development | All Rights Reserved</span>
+            </section>
+        </footer>
+  </body> 
+</html>
